@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+    <style>
+        html, body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .frame { 
+            width: 50%;
+            height: 50%;
+            border: solid;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+        .frame span {
+            font-size: 18px; 
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .frame span.last:after {
+            content: "..."
+        }
+        .frame span[data-visible="false"] {
+            opacity: 0;
+        }
+    </style>    
+</head>
+<body>
+
+<div class="frame" id="text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
